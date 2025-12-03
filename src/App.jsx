@@ -5,9 +5,9 @@ import Services from "./pages/Services";
 import Portfolio from "./pages/Portfolio";
 import Contact from "./pages/Contact";
 
-export default function App() {
+function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/schooldemo/">
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
@@ -18,3 +18,5 @@ export default function App() {
     </BrowserRouter>
   );
 }
+
+export default App;
