@@ -6,8 +6,11 @@ import Portfolio from "./pages/Portfolio";
 import Contact from "./pages/Contact";
 
 export default function App() {
+  
+  const basename = import.meta.env.PROD ? "/schooldemo" : "";
+
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={basename}>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
