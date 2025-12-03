@@ -5,9 +5,12 @@ import Services from "./pages/Services";
 import Portfolio from "./pages/Portfolio";
 import Contact from "./pages/Contact";
 
-function App() {
+export default function App() {
+  console.log("Environment:", import.meta.env);
+  const basename = import.meta.env.PROD ? "/schooldemo" : "";
+
   return (
-    <BrowserRouter basename="/schooldemo/">
+    <BrowserRouter basename={basename}>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
@@ -18,5 +21,3 @@ function App() {
     </BrowserRouter>
   );
 }
-
-export default App;

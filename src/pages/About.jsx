@@ -6,6 +6,7 @@ export default function About() {
   return (
     <MainLayout>
         <Hero title="About Us" src="https://picsum.photos/id/241/1920/1080" />
+        testing 
       <div className="container py-5">
 
         <h1 className="text-center mb-4">About Our School</h1>
