@@ -6,8 +6,9 @@ import Portfolio from "./pages/Portfolio";
 import Contact from "./pages/Contact";
 
 export default function App() {
+  
   return (
-    <HashRouter>
+    <HashRouter basename={basename}>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
