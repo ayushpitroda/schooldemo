@@ -8,7 +8,7 @@ import Contact from "./pages/Contact";
 export default function App() {
   
   return (
-    <HashRouter basename={basename}>
+    <HashRouter >
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
